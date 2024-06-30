@@ -13,15 +13,15 @@ spec:
   selector: 
     matchLabels:
      component: mysql
-      project: expense
-      tier: db
+     project: expense
+     tier: db
   # pod definition
   template:
     metadata:
       labels:
-        component: mysql
-        project: expense
-        tier: db
+       component: mysql
+       project: expense
+       tier: db
     spec:
       containers:
       - name: mysql
