@@ -9,20 +9,20 @@ metadata:
     project: expense
     tier: db
 spec:
-   replicas: 10
-   selector: 
-     matchLabels:
-       component: mysql
-       project: expense
-       tier: db
-   # pod definition
-   template:
-     metadata:
-       labels:
-         component: mysql
-         project: expense
-         tier: db
-     spec:
-       containers:
-       - name: mysql
-         image: sudheer459/mysql:v1.0
+  replicas: 10
+  selector: 
+    matchLabels:
+     component: mysql
+      project: expense
+      tier: db
+  # pod definition
+  template:
+    metadata:
+      labels:
+        component: mysql
+        project: expense
+        tier: db
+    spec:
+      containers:
+      - name: mysql
+        image: sudheer459/mysql:v1.0
